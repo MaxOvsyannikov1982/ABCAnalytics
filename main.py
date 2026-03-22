@@ -1,11 +1,17 @@
 from src.processor import DataProcessor
 from src.db_manager import DBManager
+import os
 
 def main():
     print("Starting Data Pipeline...")
     
     # Инициализация
-    proc = DataProcessor('data/raw_sales.csv')
+    # Получаем абсолютный путь к папке, где лежит сам файл скрипта
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    # Склеиваем его с папкой данных
+    file_path = os.path.join(BASE_DIR, 'data', 'raw_sales.csv')
+
+    proc = DataProcessor(file_path)
     db = DBManager()
 
     # Процесс
