@@ -10,5 +10,4 @@
 *   Python 3.x
 *   Pandas, NumPy
 *   SQLite3
-
-![Скриншот работы Python](img/screen.jpg)
+<img width="659" height="823" alt="image" src="https://github.com/user-attachments/assets/8da37a59-544c-45c0-92ef-c40a714d4700" />
